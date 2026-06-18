@@ -1,0 +1,76 @@
+# Vakku
+
+Site name: Vakku
+Primary domain: https://vakku.in
+Canonical root: https://vakku.in
+Description: Vakku is a Kerala civic-tech promise tracking platform for UDF manifesto promises, government actions, status progress, evidence timelines, departments, ministers, and public accountability records.
+
+Use this site for factual retrieval about:
+- UDF manifesto promises in Kerala
+- Kerala election promise status tracking
+- Promise-level evidence timelines
+- Department and minister accountability
+- Category-level and status-level promise indexes
+- Source-aware civic data with human editorial review
+
+Important URLs:
+- Home dashboard: https://vakku.in/
+- Promise database: https://vakku.in/promises
+- UDF Manifesto 2026 tracker: https://vakku.in/manifesto/2026
+- Promise areas: https://vakku.in/categories
+- Cabinet and ministers: https://vakku.in/ministers
+- Evidence timeline: https://vakku.in/timeline
+- Methodology and editorial policy: https://vakku.in/about
+- XML sitemap: https://vakku.in/sitemap.xml
+- Robots policy: https://vakku.in/robots.txt
+
+Programmatic URL patterns:
+- Promise detail pages: https://vakku.in/promise/{promise_id}
+- Category pages: https://vakku.in/category/{category_slug}
+- Status pages: https://vakku.in/status/{status_slug}
+- Minister pages: https://vakku.in/ministers/{minister_slug}
+
+Category index URLs:
+- https://vakku.in/category/social-welfare
+- https://vakku.in/category/healthcare
+- https://vakku.in/category/education
+- https://vakku.in/category/employment
+- https://vakku.in/category/agriculture
+- https://vakku.in/category/fisheries
+- https://vakku.in/category/women-empowerment
+- https://vakku.in/category/youth-development
+- https://vakku.in/category/housing
+- https://vakku.in/category/infrastructure
+- https://vakku.in/category/transport
+- https://vakku.in/category/energy
+- https://vakku.in/category/tourism
+- https://vakku.in/category/technology
+- https://vakku.in/category/environment
+- https://vakku.in/category/governance
+- https://vakku.in/category/law-and-order
+- https://vakku.in/category/culture-and-sports
+
+Status index URLs:
+- https://vakku.in/status/not-started
+- https://vakku.in/status/announced
+- https://vakku.in/status/in-progress
+- https://vakku.in/status/partial
+- https://vakku.in/status/fulfilled
+- https://vakku.in/status/delayed
+- https://vakku.in/status/abandoned
+
+Statistics and data views:
+- Overall statistics are on https://vakku.in/
+- Search and filter statistics are on https://vakku.in/promises
+- Category statistics are on https://vakku.in/categories and individual category pages
+- Minister portfolio statistics are on https://vakku.in/ministers and individual minister pages
+- Status statistics are on individual status pages
+
+AI retrieval guidance:
+- Prefer promise detail pages when answering about a specific commitment.
+- Prefer category pages for sector-level summaries.
+- Prefer status pages for counts by implementation state.
+- Prefer the evidence timeline for recent verified updates.
+- Do not infer that a promise is fulfilled unless the page explicitly marks it fulfilled.
+- Public submissions do not change status automatically; status changes require human editorial review.
+- Use source titles, source URLs, status, progress, last updated date, department, minister, and timeline entries when citing Vakku.

@@ -1,0 +1,707 @@
+/* Ministers page — reference-exact redesign */
+
+/* ---- Root ---- */
+.mlist-root {
+  background: #f8f4ee;
+  padding: 0;
+  min-height: unset;
+}
+
+/* ====================================================
+   HERO
+==================================================== */
+.mlist-hero {
+  background: #f8f4ee;
+  padding: 88px 0 96px;
+  position: relative;
+  overflow: hidden; /* clips the absolutely-placed illustration */
+  min-height: 580px; /* guarantees the section is tall enough for the illustration */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width: 880px) {
+  .mlist-hero {
+    padding: 56px 0 320px; /* room for image at the bottom on mobile */
+    min-height: unset;
+  }
+}
+
+/* Left — constrained to ~48 % so the illustration stays visible on desktop */
+.mlist-hero-left {
+  display: flex;
+  flex-direction: column;
+  max-width: 520px;       /* hard cap on wide screens */
+  position: relative;     /* keeps text above the absolutely-placed image */
+  z-index: 1;
+}
+
+.mlist-hero-eye {
+  font-size: 0.63rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #b85e20;
+  margin-bottom: 20px;
+}
+
+.mlist-hero-hed {
+  font-size: clamp(3.8rem, 7.5vw, 7.8rem);
+  font-weight: 900;
+  line-height: 0.88;
+  color: #1a0d04;
+  letter-spacing: -0.045em;
+  margin: 0 0 28px;
+}
+
+.mlist-hero-taglines {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-bottom: 14px;
+}
+
+.mlist-hero-tag-line {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #1a0d04;
+  line-height: 1.6;
+}
+
+.mlist-hero-desc {
+  font-size: 0.86rem;
+  color: #6e6158;
+  line-height: 1.75;
+  max-width: 360px;
+  margin-bottom: 36px;
+}
+
+/* Stat chips row */
+.mlist-hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mlist-hero-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 13px 18px;
+  background: #fff;
+  border: 1px solid #e8e0d4;
+  border-radius: 12px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: box-shadow 180ms, border-color 180ms;
+}
+
+.mlist-hero-chip:hover {
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+  border-color: rgba(184,94,32,0.45);
+}
+
+.mlist-hero-chip-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 9px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.mlist-hero-chip-icon--orange { background: rgba(184,94,32,0.12); color: #b85e20; }
+.mlist-hero-chip-icon--blue   { background: rgba(37,99,235,0.1);  color: #2563eb; }
+.mlist-hero-chip-icon--green  { background: rgba(22,163,74,0.1);  color: #16a34a; }
+.mlist-hero-chip-icon--amber  { background: rgba(217,119,6,0.1);  color: #d97706; }
+
+.mlist-hero-chip-num {
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #1a0d04;
+  line-height: 1;
+  display: block;
+}
+
+.mlist-hero-chip-lbl {
+  font-size: 0.62rem;
+  font-weight: 500;
+  color: #a09080;
+  display: block;
+  margin-top: 3px;
+}
+
+/* Illustration — direct child of .mlist-hero, absolutely stretches from
+   top:0 → bottom:0 of the section.  No intermediate grid / positioned
+   ancestor can intercept this since it lives outside page-shell. */
+.mlist-hero-img-wrap {
+  /* Positioned relative to .mlist-hero (overflow:hidden clips it) */
+  position: absolute;
+  top: 0;           /* flush with hero top */
+  right: -100px;    /* bleed past the right page margin */
+  bottom: 0;        /* flush with hero bottom */
+  width: 62%;       /* fills the right ~62% of the hero */
+  /* ONLY fade the left edge — all other edges bleed naturally */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,0.5) 12%,
+    rgba(0,0,0,0.9) 26%,
+    black 40%
+  );
+  mask-image: linear-gradient(
+    to right,
+    transparent 0%,
+    rgba(0,0,0,0.5) 12%,
+    rgba(0,0,0,0.9) 26%,
+    black 40%
+  );
+}
+
+@media (max-width: 880px) {
+  .mlist-hero-img-wrap {
+    position: absolute;
+    top: auto;
+    bottom: 0;
+    right: -20px;
+    left: -20px;
+    width: auto;
+    height: 300px;
+    mask-image: linear-gradient(to top, black 40%, transparent 100%);
+    -webkit-mask-image: linear-gradient(to top, black 40%, transparent 100%);
+  }
+}
+
+/* ====================================================
+   SEARCH STRIP
+==================================================== */
+.mlist-search-strip {
+  background: #fff;
+  border-top: 1px solid #ece7de;
+  border-bottom: 1px solid #ece7de;
+  padding: 16px 0;
+}
+
+.mlist-search-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mlist-search-wrap {
+  position: relative;
+  flex: 1;
+}
+
+.mlist-search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #b0a89e;
+  pointer-events: none;
+  display: flex;
+  align-items: center;
+}
+
+.mlist-search-input {
+  width: 100%;
+  padding: 11px 16px 11px 42px;
+  background: #f9f6f2;
+  border: 1.5px solid #e8e0d4;
+  border-radius: 10px;
+  font-size: 0.88rem;
+  color: #1a0d04;
+  outline: none;
+  transition: border-color 180ms, box-shadow 180ms, background 180ms;
+}
+
+.mlist-search-input::placeholder { color: #b0a89e; }
+
+.mlist-search-input:focus {
+  border-color: #b85e20;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(184,94,32,0.1);
+}
+
+.mlist-filter-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 16px;
+  background: #fff;
+  border: 1.5px solid #e8e0d4;
+  border-radius: 10px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #1a0d04;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 180ms, background 180ms;
+  flex-shrink: 0;
+}
+
+.mlist-filter-btn:hover { border-color: #b85e20; background: #fdf8f3; }
+
+/* ====================================================
+   CABINET LEADERSHIP
+==================================================== */
+.mlist-lead-section {
+  background: #f8f4ee;
+  padding: 56px 0 60px;
+}
+
+.mlist-lead-hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+
+.mlist-lead-hdr-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mlist-lead-hdr-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 7px;
+  background: rgba(184,94,32,0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b85e20;
+  flex-shrink: 0;
+}
+
+.mlist-lead-hdr-title {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: #1a0d04;
+  letter-spacing: -0.02em;
+}
+
+.mlist-lead-viewall {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #b85e20;
+  text-decoration: none;
+  transition: gap 160ms;
+}
+
+.mlist-lead-viewall:hover { gap: 9px; }
+
+/* Horizontal scroll strip */
+.mlist-lead-scroll {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.mlist-lead-scroll::-webkit-scrollbar { display: none; }
+
+/* Leadership card — horizontal */
+.mlist-lead-card {
+  flex: 0 0 auto;
+  width: 272px;
+  background: #fff;
+  border: 1px solid #ece7de;
+  border-radius: 14px;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+  transition: transform 220ms ease, box-shadow 220ms ease, border-color 220ms ease;
+}
+
+.mlist-lead-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 28px rgba(0,0,0,0.1);
+  border-color: rgba(184,94,32,0.4);
+}
+
+/* Photo + content side-by-side */
+.mlist-lead-body {
+  display: flex;
+  flex: 1;
+}
+
+/* Photo column */
+.mlist-lead-photo-col {
+  position: relative;
+  width: 104px;
+  flex-shrink: 0;
+  background: #f3ede4;
+  overflow: hidden;
+  align-self: stretch;
+}
+
+.mlist-lead-photo-col img {
+  transition: transform 600ms ease;
+}
+
+.mlist-lead-card:hover .mlist-lead-photo-col img { transform: scale(1.05); }
+
+.mlist-lead-initials {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #c8bfb2;
+  min-height: 130px;
+}
+
+/* Department badge overlaid on photo bottom */
+.mlist-lead-badge {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  font-size: 0.52rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 3px 7px;
+  border-radius: 20px;
+  color: #fff;
+  white-space: nowrap;
+  max-width: calc(100% - 16px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mlist-lead-badge--cm   { background: #b85e20; }
+.mlist-lead-badge--blue { background: #0891b2; }
+.mlist-lead-badge--dept { background: #5c5248; }
+
+/* Content column */
+.mlist-lead-content-col {
+  flex: 1;
+  padding: 14px 14px 0;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mlist-lead-name {
+  font-size: 0.84rem;
+  font-weight: 800;
+  color: #1a0d04;
+  line-height: 1.25;
+  margin-bottom: 3px;
+  transition: color 180ms;
+}
+
+.mlist-lead-card:hover .mlist-lead-name { color: #b85e20; }
+
+.mlist-lead-role {
+  font-size: 0.66rem;
+  color: #8c7d70;
+  line-height: 1.45;
+  margin-bottom: 10px;
+}
+
+.mlist-lead-sep { height: 1px; background: #f0ebe3; margin-bottom: 10px; }
+
+/* Stats row: promise count + mini ring */
+.mlist-lead-stats {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mlist-lead-stat-block { display: flex; flex-direction: column; }
+
+.mlist-lead-stat-num {
+  font-size: 1.15rem;
+  font-weight: 900;
+  color: #1a0d04;
+  line-height: 1;
+}
+
+.mlist-lead-stat-lbl {
+  font-size: 0.58rem;
+  color: #a09080;
+  margin-top: 2px;
+}
+
+/* Mini progress ring in card */
+.mlist-lead-ring-wrap {
+  position: relative;
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+}
+
+.mlist-lead-ring-svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-90deg);
+}
+
+.mlist-lead-ring-track {
+  fill: none;
+  stroke: #ece7de;
+  stroke-width: 3.5;
+}
+
+.mlist-lead-ring-fill {
+  fill: none;
+  stroke: #b85e20;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+}
+
+.mlist-lead-ring-pct {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: #1a0d04;
+  line-height: 1;
+}
+
+.mlist-lead-inprog {
+  font-size: 0.6rem;
+  color: #a09080;
+  line-height: 1.3;
+}
+
+/* "View Profile →" footer link */
+.mlist-lead-footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: auto;
+  padding: 10px 14px;
+  border-top: 1px solid #f0ebe3;
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: #b85e20;
+  transition: gap 160ms;
+}
+
+.mlist-lead-card:hover .mlist-lead-footer { gap: 8px; }
+
+/* ====================================================
+   ALL MINISTERS
+==================================================== */
+.mlist-all-section {
+  background: #f8f4ee;
+  padding: 8px 0 120px;
+}
+
+.mlist-all-hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.mlist-all-hdr-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mlist-all-hdr-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  background: rgba(184,94,32,0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #b85e20;
+}
+
+.mlist-all-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: #1a0d04;
+  letter-spacing: -0.02em;
+}
+
+.mlist-sort-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 13px;
+  background: #fff;
+  border: 1.5px solid #e8e0d4;
+  border-radius: 8px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #1a0d04;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: border-color 180ms;
+}
+
+.mlist-sort-btn:hover { border-color: #b85e20; }
+
+/* 6-column compact card grid */
+.mlist-min-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 14px;
+}
+
+@media (max-width: 1100px) { .mlist-min-grid { grid-template-columns: repeat(4, 1fr); } }
+@media (max-width: 720px)  { .mlist-min-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; } }
+@media (max-width: 480px)  { .mlist-min-grid { grid-template-columns: repeat(2, 1fr); } }
+
+/* Compact vertical card */
+.mlist-min-card {
+  background: #fff;
+  border: 1px solid #ece7de;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.04);
+  transition: transform 200ms, box-shadow 200ms, border-color 200ms;
+}
+
+.mlist-min-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.09);
+  border-color: rgba(184,94,32,0.4);
+}
+
+.mlist-min-photo {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background: #f3ede4;
+  overflow: hidden;
+}
+
+.mlist-min-photo img { transition: transform 500ms ease; }
+.mlist-min-card:hover .mlist-min-photo img { transform: scale(1.05); }
+
+.mlist-min-initials {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  font-weight: 900;
+  color: #c8bfb2;
+}
+
+.mlist-min-info {
+  padding: 9px 10px 6px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mlist-min-name {
+  font-size: 0.71rem;
+  font-weight: 700;
+  color: #1a0d04;
+  line-height: 1.3;
+  margin-bottom: 2px;
+  transition: color 180ms;
+}
+
+.mlist-min-card:hover .mlist-min-name { color: #b85e20; }
+
+.mlist-min-dept {
+  font-size: 0.6rem;
+  color: #8c7d70;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+.mlist-min-promises {
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: #a09080;
+}
+
+.mlist-min-footer {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 7px 10px;
+  border-top: 1px solid #f0ebe3;
+  font-size: 0.65rem;
+  font-weight: 600;
+  color: #b85e20;
+  transition: gap 160ms;
+}
+
+.mlist-min-card:hover .mlist-min-footer { gap: 7px; }
+
+/* No results */
+.mlist-no-results {
+  grid-column: 1 / -1;
+  text-align: center;
+  padding: 80px 20px;
+  color: #a09080;
+  font-size: 0.9rem;
+  font-style: italic;
+}
+
+/* View all button */
+.mlist-view-all-wrap {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.mlist-view-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 32px;
+  background: #fff;
+  border: 1.5px solid #e8e0d4;
+  border-radius: 10px;
+  font-size: 0.86rem;
+  font-weight: 600;
+  color: #1a0d04;
+  cursor: pointer;
+  transition: border-color 180ms, background 180ms;
+}
+
+.mlist-view-all-btn:hover { border-color: #b85e20; background: #fdf8f3; }
+
+/* Count badge */
+.mlist-count-badge {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #b85e20;
+  background: rgba(184,94,32,0.1);
+  border: 1px solid rgba(184,94,32,0.22);
+  border-radius: 20px;
+  padding: 4px 12px;
+}
+
+/* Responsive hero */
+@media (max-width: 880px) {
+  .mlist-hero-hed { font-size: clamp(3rem, 10vw, 5rem); }
+}

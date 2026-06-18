@@ -1,0 +1,73 @@
+{
+  "government": "UDF",
+  "chief_minister": "V.D. Satheesan",
+  "election_result_date": "2026-04-20",
+  "sworn_in_date": "2026-05-18",
+  "last_checked": "2026-05-30",
+  "total_promises": 1285,
+  "fulfilled": 1,
+  "announced": 25,
+  "in_progress": 4,
+  "partial": 0,
+  "not_started": 1255,
+  "delayed": 0,
+  "abandoned": 0,
+  "overall_progress_percent": 0,
+  "data_sources": [
+    {
+      "title": "First Cabinet Decisions – Day 1 (May 18, 2026)",
+      "url": "https://www.onmanorama.com/news/kerala/2026/05/18/kerala-cabinet-decisions-satheesan-women-free-bus-travel-asha-elderly-live.html",
+      "verified_on": "2026-05-21"
+    },
+    {
+      "title": "SilverLine Project Scrapped (May 20, 2026)",
+      "url": "https://www.onmanorama.com/news/kerala/2026/05/20/silverline-project-scrapped-land-acquisition-orders-denotified.html",
+      "verified_on": "2026-05-21"
+    },
+    {
+      "title": "100-Day Action Plan Launch – June 1",
+      "url": "https://www.thetrendingpeople.com/2026/05/kerala-udf-100-day-action-plan-psc-rank-lists-extended.html",
+      "verified_on": "2026-05-21"
+    },
+    {
+      "title": "Government of Kerala: G.O.(Ms) No.63/2026/GAD constituting Senior Citizen Welfare Department",
+      "url": "https://mis.swd.kerala.gov.in/DOCUMENTS/notification/335.pdf",
+      "verified_on": "2026-05-30"
+    },
+    {
+      "title": "Onmanorama: Kerala PSC extends validity of rank lists till November 30",
+      "url": "https://www.onmanorama.com/news/kerala/2026/05/25/kerala-psc-extends-validity-of-rank-lists-till-november-30.html",
+      "verified_on": "2026-05-30"
+    },
+    {
+      "title": "New Indian Express: Vande Mataram played at Kerala policy address as UDF government outlines key welfare and reform measures",
+      "url": "https://www.newindianexpress.com/states/kerala/2026/May/29/vande-mataram-played-at-kerala-policy-address-as-udf-government-outlines-key-welfare-and-reform-measures",
+      "verified_on": "2026-05-30"
+    },
+    {
+      "title": "New Indian Express: Kerala govt policy address: State plans menstrual leave for schoolgirls, mandatory workplace daycare",
+      "url": "https://www.newindianexpress.com/states/kerala/2026/May/29/kerala-govts-policy-address-state-plans-menstrual-leave-for-schoolgirls-mandatory-workplace-daycare",
+      "verified_on": "2026-05-30"
+    },
+    {
+      "title": "Hindustan Times/PTI: Policy address: Governor underscores UDF govt focus on welfare measures, transparent governance",
+      "url": "https://www.hindustantimes.com/india-news/policy-address-governor-underscores-udf-govt-s-focus-on-welfare-measures-101780047959489-amp.html",
+      "verified_on": "2026-05-30"
+    },
+    {
+      "title": "Onmanorama: 3-day menstrual leave to equal pay: Kerala govt's big promises for women",
+      "url": "https://www.onmanorama.com/news/kerala/2026/05/29/3-day-menstrual-leave-to-equal-pay-kerala-govt-s-big-promises-for-women.html",
+      "verified_on": "2026-05-30"
+    },
+    {
+      "title": "The South First: Governor Arlekar delivers policy address outlining UDF vision",
+      "url": "https://thesouthfirst.com/kerala/governor-arlekar-delivers-policy-address-outlining-udfs-vision-for-a-puthuyuga-keralam/",
+      "verified_on": "2026-05-30"
+    },
+    {
+      "title": "Kerala Kaumudi: Menstrual leave for schoolgirls, IT Dept renamed as Future Technology Dept",
+      "url": "https://keralakaumudi.com/en/kerala/general/menstrual-leave-for-schoolgirls-it-dept-renamed-as-future-technology-dept-government-announces-major-welfare-measures-in-policy-address-1754960",
+      "verified_on": "2026-05-30"
+    }
+  ]
+}

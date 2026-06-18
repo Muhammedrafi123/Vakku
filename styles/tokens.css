@@ -1,0 +1,18 @@
+:root {
+  --color-bg-dark: #0f0f0f;
+  --color-bg-light: #ffffff;
+  --color-surface: #f8f7f4;
+  --color-accent: #e8821a;
+  --color-accent-dark: #c46d12;
+  --color-fulfilled: #16a34a;
+  --color-in-progress: #d97706;
+  --color-not-started: #9ca3af;
+  --color-delayed: #f59e0b;
+  --color-abandoned: #dc2626;
+  --color-partial: #2563eb;
+  --color-text-primary: #111111;
+  --color-text-secondary: #4b5563;
+  --color-border: #e5e7eb;
+  --background: var(--color-bg-light);
+  --foreground: var(--color-text-primary);
+}
