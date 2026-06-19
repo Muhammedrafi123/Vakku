@@ -3,16 +3,16 @@
   "chief_minister": "V.D. Satheesan",
   "election_result_date": "2026-04-20",
   "sworn_in_date": "2026-05-18",
-  "last_checked": "2026-05-30",
+  "last_checked": "2026-06-19",
   "total_promises": 1285,
-  "fulfilled": 1,
+  "fulfilled": 3,
   "announced": 25,
-  "in_progress": 4,
+  "in_progress": 9,
   "partial": 0,
-  "not_started": 1255,
+  "not_started": 1248,
   "delayed": 0,
   "abandoned": 0,
-  "overall_progress_percent": 0,
+  "overall_progress_percent": 1,
   "data_sources": [
     {
       "title": "First Cabinet Decisions – Day 1 (May 18, 2026)",
@@ -68,6 +68,36 @@
       "title": "Kerala Kaumudi: Menstrual leave for schoolgirls, IT Dept renamed as Future Technology Dept",
       "url": "https://keralakaumudi.com/en/kerala/general/menstrual-leave-for-schoolgirls-it-dept-renamed-as-future-technology-dept-government-announces-major-welfare-measures-in-policy-address-1754960",
       "verified_on": "2026-05-30"
+    },
+    {
+      "title": "Deccan Herald: Kerala launches Priyadarshini free bus travel scheme for women and transgender persons",
+      "url": "https://www.deccanherald.com/india/kerala/kerala-launches-priyadarshini-free-ksrtc-bus-travel-for-women-and-transgender-persons-3622456",
+      "verified_on": "2026-06-19"
+    },
+    {
+      "title": "The Hindu: Kerala Budget 2026-27 highlights – Mission Samudra, health insurance, wildlife allocation",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-budget-2026-27-highlights/article69716823.ece",
+      "verified_on": "2026-06-19"
+    },
+    {
+      "title": "New Indian Express: Kerala Budget 2026-27 — Satheesan revised budget key announcements",
+      "url": "https://www.newindianexpress.com/states/kerala/2026/Jun/19/kerala-budget-2026-27-satheesan-revised-budget-highlights",
+      "verified_on": "2026-06-19"
+    },
+    {
+      "title": "Outlook India: Kerala Budget 2026-27 — ₹192 crore for human-wildlife conflict",
+      "url": "https://www.outlookindia.com/national/kerala-budget-2026-27-192-crore-human-wildlife-conflict",
+      "verified_on": "2026-06-19"
+    },
+    {
+      "title": "The News Minute: Kerala white paper reveals fiscal distress, KIIFB reform",
+      "url": "https://www.thenewsminute.com/kerala/kerala-white-paper-fiscal-health-kiifb-satheesan-budget-2026",
+      "verified_on": "2026-06-19"
+    },
+    {
+      "title": "Indian Cooperative: Kerala cooperative deposit guarantee raised to ₹10 lakh",
+      "url": "https://www.indiancooperative.com/co-op-news-snippets/kerala-cooperative-deposit-guarantee-raised-10-lakh-2026/",
+      "verified_on": "2026-06-19"
     }
   ]
 }
