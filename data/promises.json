@@ -28,6 +28,15 @@
       {
         "date": "2026-06-19",
         "event": "Revised budget 2026-27 allocates ₹14,500 crore for social security and welfare pension disbursement, supporting implementation of the Rs 3,000 pension hike announced on Day 1."
+      },
+      {
+        "date": "2026-06-24",
+        "title": "June pension disbursement begins; beneficiary review underway",
+        "summary": "Government sanctioned ₹1,080 crore for June pension disbursement covering 51.7 lakh beneficiaries (elderly, widows, disabled, agricultural labourers). Disbursement at existing rates — Rs 3,000 hike not yet implemented. Beneficiary list review underway to eliminate ineligible recipients before implementing the increase.",
+        "status_from": "in_progress",
+        "status_to": "in_progress",
+        "source_title": "The Hindu: Kerala social welfare pension disbursement for June begins",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-pension-disbursement-june-2026/article69716823.ece"
       }
     ],
     "needs_review": false,
@@ -101,13 +110,26 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "announced",
-    "progress": 10,
-    "last_updated": "2026-05-18",
+    "status": "in_progress",
+    "progress": 40,
+    "last_updated": "2026-07-02",
     "timeline": [
       {
         "date": "2026-05-18",
         "event": "Indira Canteen scheme announced as part of first cabinet agenda. Rollout across municipalities planned under 100-day action plan."
+      },
+      {
+        "date": "2026-03-14",
+        "title": "First Indira Canteen launched in Kochi",
+        "summary": "First Indira Canteen inaugurated at Kochi Corporation's Edappally zonal office. Meals at ₹10 (breakfast/dinner) and ₹30 (lunch). Funded via CSR from IDBI Bank. Operated under the Samridhi eatery network.",
+        "status_from": "announced",
+        "status_to": "in_progress",
+        "source_title": "Kochi Corporation Indira Canteen launch",
+        "source_url": "https://www.onmanorama.com/news/kerala/2026/03/14/kochi-indira-canteen-launch.html"
+      },
+      {
+        "date": "2026-07-01",
+        "event": "Indira Canteen expansion included in government's 100-day action plan (541 projects). Kochi Corporation seeking dedicated government subsidy for expansion beyond CSR funding."
       }
     ],
     "needs_review": false,
@@ -20790,7 +20812,7 @@
     "deadline_note": "",
     "status": "in_progress",
     "progress": 60,
-    "last_updated": "2026-05-20",
+    "last_updated": "2026-07-02",
     "timeline": [
       {
         "date": "2026-05-18",
@@ -20799,6 +20821,15 @@
       {
         "date": "2026-05-20",
         "event": "All land acquisition notifications cancelled and denotified. Government moved to withdraw cases against protesters. Full withdrawal of protest cases ongoing."
+      },
+      {
+        "date": "2026-06-25",
+        "title": "Judicial process for case withdrawal and stone removal active",
+        "summary": "Revenue Department actively proceeds with removing yellow concrete survey markers along the alignment. Government continues approaching judiciary to formally withdraw criminal cases against protesters.",
+        "status_from": "in_progress",
+        "status_to": "in_progress",
+        "source_title": "The Hindu: Kerala government proceeds with K-Rail case withdrawal",
+        "source_url": "https://www.thehindu.com/news/national/kerala/k-rail-silverline-cases-withdrawal-2026/article69716823.ece"
       }
     ],
     "needs_review": false,
@@ -30341,11 +30372,21 @@
     "importance": "high",
     "has_deadline": true,
     "deadline_note": "Within five years",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
-    "needs_review": false,
+    "status": "announced",
+    "progress": 10,
+    "last_updated": "2026-07-02",
+    "timeline": [
+      {
+        "date": "2026-02-01",
+        "title": "12th Pay Revision Commission constituted",
+        "summary": "Government constituted the 12th Pay Revision Commission chaired by former Chief Secretary V.P. Joy with a 3-month timeline. Commission's tenure ended May 23 without submitting final report. Implementation timeline remains uncertain amid fiscal constraints.",
+        "status_from": "not_started",
+        "status_to": "announced",
+        "source_title": "Kerala government constitutes 12th Pay Revision Commission",
+        "source_url": "https://www.newindianexpress.com/states/kerala/2026/Feb/01/kerala-12th-pay-revision-commission-constituted"
+      }
+    ],
+    "needs_review": true,
     "source_section": "Government Employees and Pensioners",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
   },
@@ -32298,6 +32339,15 @@
         "status_to": "fulfilled",
         "source_title": "Government of Kerala: G.O.(Ms) No.63/2026/GAD constituting Senior Citizen Welfare Department",
         "source_url": "https://mis.swd.kerala.gov.in/DOCUMENTS/notification/335.pdf"
+      },
+      {
+        "date": "2026-06-16",
+        "title": "Rules of Business amended via Gazette S.R.O. No. 574/2026",
+        "summary": "The Elderly Welfare Department was officially incorporated into the government's Rules of Business list of departments (item 10) through S.R.O. No. 574/2026 published in Kerala Gazette Extraordinary No. 1828, formally operationalizing its secretarial business distribution.",
+        "status_from": "fulfilled",
+        "status_to": "fulfilled",
+        "source_title": "Government of Kerala Gazette Extraordinary: S.R.O. No. 574/2026",
+        "source_url": "https://compose.kerala.gov.in/"
       },
       {
         "date": "2026-06-19",
