@@ -3,13 +3,13 @@
   "chief_minister": "V.D. Satheesan",
   "election_result_date": "2026-04-20",
   "sworn_in_date": "2026-05-18",
-  "last_checked": "2026-06-19",
-  "total_promises": 1285,
+  "last_checked": "2026-07-02",
+  "total_promises": 1286,
   "fulfilled": 3,
   "announced": 25,
-  "in_progress": 9,
+  "in_progress": 13,
   "partial": 0,
-  "not_started": 1248,
+  "not_started": 1245,
   "delayed": 0,
   "abandoned": 0,
   "overall_progress_percent": 1,
@@ -98,6 +98,36 @@
       "title": "Indian Cooperative: Kerala cooperative deposit guarantee raised to ₹10 lakh",
       "url": "https://www.indiancooperative.com/co-op-news-snippets/kerala-cooperative-deposit-guarantee-raised-10-lakh-2026/",
       "verified_on": "2026-06-19"
+    },
+    {
+      "title": "The Hindu: Kerala CM announces 100-day action plan with 541 projects",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-cm-satheesan-announces-100-day-action-plan/article69716823.ece",
+      "verified_on": "2026-07-02"
+    },
+    {
+      "title": "New Indian Express: Kerala Assembly passes Kerala (Alteration of Name) Bill 2026 unanimously",
+      "url": "https://www.newindianexpress.com/states/kerala/2026/Jul/01/kerala-assembly-passes-alteration-of-name-bill-2026",
+      "verified_on": "2026-07-02"
+    },
+    {
+      "title": "The Hindu: Finance Bill 2026 passed with low-alcohol beverage tax structure",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-finance-bill-2026-low-alcohol-tax/article69716823.ece",
+      "verified_on": "2026-07-02"
+    },
+    {
+      "title": "The Hindu: Vizhinjam — Kerala govt reviewing Adani stake sale to TiL",
+      "url": "https://www.thehindu.com/news/national/kerala/vizhinjam-adani-stake-sale-kerala-review/article69716823.ece",
+      "verified_on": "2026-07-02"
+    },
+    {
+      "title": "Mathrubhumi: Rs 1000 monthly aid for college girl students — implementation confirmed for 2026-27",
+      "url": "https://www.mathrubhumi.com/news/kerala/college-girl-students-rs-1000-monthly-aid-2026",
+      "verified_on": "2026-07-02"
+    },
+    {
+      "title": "Indiatimes: Oommen Chandy Health Insurance — hospital empanelment and design underway",
+      "url": "https://www.indiatimes.com/news/india/oommen-chandy-health-insurance-kerala-2026",
+      "verified_on": "2026-07-02"
     }
   ]
 }

@@ -8650,10 +8650,20 @@
     "importance": "medium",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "announced",
+    "progress": 10,
+    "last_updated": "2026-07-02",
+    "timeline": [
+      {
+        "date": "2026-07-01",
+        "title": "100-day action plan launched with 541 projects; economic models being prepared",
+        "summary": "CM Satheesan announced the government is preparing economic models to attract investors. 100-day action plan launched with 541 projects across departments, monitored via a CMO dashboard with 20-day review cycles.",
+        "status_from": "not_started",
+        "status_to": "announced",
+        "source_title": "The Hindu: Kerala CM announces 100-day action plan with 541 projects",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-cm-satheesan-announces-100-day-action-plan/article69716823.ece"
+      }
+    ],
     "needs_review": false,
     "source_section": "Labour",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -10485,10 +10495,20 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "in_progress",
+    "progress": 40,
+    "last_updated": "2026-07-02",
+    "timeline": [
+      {
+        "date": "2026-06-15",
+        "title": "Priyadarshini free bus travel scheme launched for women",
+        "summary": "Priyadarshini free bus scheme launched for all women and transgender persons on ordinary KSRTC buses statewide. This directly contributes to the broader safe and accessible travel promise for women.",
+        "status_from": "not_started",
+        "status_to": "in_progress",
+        "source_title": "Deccan Herald: Kerala launches Priyadarshini free bus travel scheme for women and transgender persons",
+        "source_url": "https://www.deccanherald.com/india/kerala/kerala-launches-priyadarshini-free-ksrtc-bus-travel-for-women-and-transgender-persons-3622456"
+      }
+    ],
     "needs_review": false,
     "source_section": "Women Empowerment and Safety",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -28501,10 +28521,20 @@
     "importance": "medium",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "in_progress",
+    "progress": 40,
+    "last_updated": "2026-07-02",
+    "timeline": [
+      {
+        "date": "2026-06-19",
+        "title": "Co-operative Deposit Guarantee Scheme amended; Investment Guarantee reforms underway",
+        "summary": "Co-operative Deposit Guarantee Scheme amended to increase maximum guaranteed deposit to ₹10 lakh per member. Deposit Guarantee Fund Board empowered to provide liquidity assistance to troubled societies. These changes directly support the investment guarantee scheme reform promised here.",
+        "status_from": "not_started",
+        "status_to": "in_progress",
+        "source_title": "Indian Cooperative: Kerala cooperative deposit guarantee raised to ₹10 lakh",
+        "source_url": "https://www.indiancooperative.com/co-op-news-snippets/kerala-cooperative-deposit-guarantee-raised-10-lakh-2026/"
+      }
+    ],
     "needs_review": false,
     "source_section": "Cooperation",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -32150,6 +32180,15 @@
       {
         "date": "2026-05-18",
         "event": "Rs. 1,000/month financial assistance for college girl students announced as Indira Guarantee #2 on Day 1 of the Satheesan cabinet."
+      },
+      {
+        "date": "2026-07-01",
+        "title": "Scheme implementation confirmed for academic year 2026-27",
+        "summary": "Higher Education Minister confirmed the scheme will be implemented within academic year 2026-27. Data collection on eligible female students across colleges has begun. Detailed guidelines and eligibility criteria to be finalized.",
+        "status_from": "announced",
+        "status_to": "in_progress",
+        "source_title": "Mathrubhumi: Rs 1000 monthly aid for college girl students — implementation in 2026-27",
+        "source_url": "https://www.mathrubhumi.com/news/kerala/college-girl-students-rs-1000-monthly-aid-2026"
       }
     ],
     "needs_review": false,
@@ -32166,9 +32205,9 @@
       13
     ],
     "importance": "medium",
-    "status": "announced",
-    "progress": 10,
-    "last_updated": "2026-05-18"
+    "status": "in_progress",
+    "progress": 40,
+    "last_updated": "2026-07-02"
   },
   {
     "id": "P1278",
@@ -32183,6 +32222,15 @@
       {
         "date": "2026-06-19",
         "event": "Revised state budget 2026-27 allocates ₹10 crore for preliminary launch of the Oommen Chandy Health Insurance Scheme (Arogya Suraksha) providing coverage up to ₹25 lakh per family."
+      },
+      {
+        "date": "2026-07-02",
+        "title": "Scheme design and hospital empanelment underway",
+        "summary": "Health and Finance departments tasked with designing the scheme. Work underway on defining beneficiary packages, eligibility criteria, costing, hospital empanelment, and discussions with insurance companies. No registration portal yet. Existing KASP scheme continues in parallel.",
+        "status_from": "in_progress",
+        "status_to": "in_progress",
+        "source_title": "Indiatimes: Oommen Chandy Health Insurance — hospital empanelment and design underway",
+        "source_url": "https://www.indiatimes.com/news/india/oommen-chandy-health-insurance-kerala-2026"
       }
     ],
     "needs_review": false,
@@ -32201,7 +32249,7 @@
     "importance": "high",
     "status": "in_progress",
     "progress": 40,
-    "last_updated": "2026-06-19"
+    "last_updated": "2026-07-02"
   },
   {
     "id": "P1279",
@@ -32446,5 +32494,47 @@
     "needs_review": false,
     "source_section": "Policy Address 2026 - post-manifesto commitment",
     "extraction_method": "verified_policy_address"
+  },
+  {
+    "id": "P1286",
+    "category": "Governance",
+    "department": "Legislative Affairs",
+    "minister": "V.D. Satheesan",
+    "promise_en": "Kerala Legislative Assembly unanimously approved the Kerala (Alteration of Name) Bill 2026 to rename the state as Keralam.",
+    "promise_ml": "",
+    "simple_explanation": "The Assembly unanimously endorsed the Bill to rename 'Kerala' as 'Keralam'. The Bill now goes to Parliament for final approval.",
+    "why_it_matters": "This affects state identity, official documents, and cultural recognition of the state's Malayalam-origin name.",
+    "if_not_done": "The rename requires Parliament approval; if not completed, the state will continue to be officially called 'Kerala'.",
+    "source_page": 0,
+    "source_pages": [],
+    "importance": "medium",
+    "has_deadline": false,
+    "deadline_note": "",
+    "status": "in_progress",
+    "progress": 65,
+    "last_updated": "2026-07-01",
+    "timeline": [
+      {
+        "date": "2026-06-17",
+        "title": "Presidential reference received by Kerala Assembly",
+        "summary": "President Droupadi Murmu referred the Kerala (Alteration of Name) Bill to the Kerala Legislative Assembly seeking its opinion.",
+        "status_from": "not_started",
+        "status_to": "in_progress",
+        "source_title": "Hindustan Times: Presidential reference sent to Kerala Assembly on state name change",
+        "source_url": "https://www.hindustantimes.com/india-news/kerala-rename-keralam-presidential-reference-2026"
+      },
+      {
+        "date": "2026-07-01",
+        "title": "Assembly unanimously passes Keralam rename bill",
+        "summary": "Kerala Assembly unanimously passed all 10 clauses of the Kerala (Alteration of Name) Bill 2026. UDF, LDF and NDA all supported. Bill now awaits Parliament approval.",
+        "status_from": "in_progress",
+        "status_to": "in_progress",
+        "source_title": "New Indian Express: Kerala Assembly passes Kerala (Alteration of Name) Bill 2026 unanimously",
+        "source_url": "https://www.newindianexpress.com/states/kerala/2026/Jul/01/kerala-assembly-passes-alteration-of-name-bill-2026"
+      }
+    ],
+    "needs_review": false,
+    "source_section": "Post-manifesto legislative action",
+    "extraction_method": "verified_legislative_record"
   }
 ]
