@@ -11,17 +11,13 @@ export function SupportPopup() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Check if dismissed in this session
-    const isDismissed = typeof window !== "undefined" && sessionStorage.getItem("chai_popup_dismissed");
-    if (isDismissed) return;
-
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, POPUP_DELAY_MS);
 
     // Escape key handling
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === "Escape") handleClose();
+      if (e.key === "Escape") setIsVisible(false);
     };
 
     window.addEventListener("keydown", handleKeyDown);
@@ -34,9 +30,6 @@ export function SupportPopup() {
 
   const handleClose = () => {
     setIsVisible(false);
-    if (typeof window !== "undefined") {
-      sessionStorage.setItem("chai_popup_dismissed", "true");
-    }
   };
 
   if (!isVisible) return null;
