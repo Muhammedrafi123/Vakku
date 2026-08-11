@@ -3,13 +3,13 @@
   "chief_minister": "V.D. Satheesan",
   "election_result_date": "2026-04-20",
   "sworn_in_date": "2026-05-18",
-  "last_checked": "2026-07-02",
+  "last_checked": "2026-08-12",
   "total_promises": 1286,
   "fulfilled": 3,
-  "announced": 25,
-  "in_progress": 14,
-  "partial": 0,
-  "not_started": 1244,
+  "announced": 29,
+  "in_progress": 16,
+  "partial": 3,
+  "not_started": 1235,
   "delayed": 0,
   "abandoned": 0,
   "overall_progress_percent": 1,
@@ -128,6 +128,76 @@
       "title": "Indiatimes: Oommen Chandy Health Insurance — hospital empanelment and design underway",
       "url": "https://www.indiatimes.com/news/india/oommen-chandy-health-insurance-kerala-2026",
       "verified_on": "2026-07-02"
+    },
+    {
+      "title": "Onmanorama: Kerala to merge existing health insurance programmes with Oommen Chandy scheme",
+      "url": "https://www.onmanorama.com/news/kerala/2026/07/13/kerala-free-health-insurance-launch.html",
+      "verified_on": "2026-08-11"
+    },
+    {
+      "title": "Onmanorama: Kerala hikes rubber support price by Rs 50/kg to Rs 250",
+      "url": "https://www.onmanorama.com/news/kerala/2026/07/20/kerala-hikes-rubber-support-price-by-rs-50-per-kg.html",
+      "verified_on": "2026-08-11"
+    },
+    {
+      "title": "Onmanorama: Kerala Planning Board reconstituted; T.M. Chandrasekhar named vice chairperson",
+      "url": "https://www.onmanorama.com/news/kerala/2026/07/21/state-planning-board-restructuring.html",
+      "verified_on": "2026-08-11"
+    },
+    {
+      "title": "Onmanorama: Kerala sanctions 120 additional Plus One batches to address seat shortage",
+      "url": "https://www.onmanorama.com/news/kerala/2026/07/22/kerala-sanctions-120-additional-plus-one-batches-to-address-seat-shortage.html",
+      "verified_on": "2026-08-11"
+    },
+    {
+      "title": "Kerala Online News/Dailyhunt: KSBCDC Samagra 2026 and Priyadarshini self-employment loan scheme",
+      "url": "https://m.dailyhunt.in/news/india/malayalam/kerala%2Bonline%2Bnews-epaper-keralaon/kerala%2Bsamsthana%2Bpinnokka%2Bvibhaga%2Bvikasana%2Bkorppareshn%2Bksbcdc%2Bkshemapadhdhathikalude%2Bsamsthanathala%2Budhghadanam%2Bsamagra%2B2026%2Bjulai%2B23n%2Bkochiyil%2Bmukhyamanthri%2Bvidi%2Bsatheeshn%2Budhghadanam%2Bcheyyum-newsid-n719987902",
+      "verified_on": "2026-08-11"
+    },
+    {
+      "title": "UNI: Samagra 2026 to be inaugurated by Kerala CM on July 23",
+      "url": "https://www.uniindia.com/-samagra-2026-to-be-inaugurated-by-kerala-cm-on-july-23/south/news/3917111.html",
+      "verified_on": "2026-08-11"
+    },
+    {
+      "title": "PRS Legislative Research: The Kerala (Alteration of Name) Bill, 2026",
+      "url": "https://prsindia.org/billtrack/the-kerala-alteration-of-name-bill-2026",
+      "verified_on": "2026-08-11"
+    },
+    {
+      "title": "Economic Times: Lok Sabha passes Keralam renaming Bill amid Opposition uproar",
+      "url": "https://economictimes.indiatimes.com/news/politics-and-nation/lok-sabha-passes-keralam-renaming-co-op-bills-amid-opposition-uproar/articleshow/133150371.cms",
+      "verified_on": "2026-08-11"
+    },
+    {
+      "title": "The Hindu: Kerala pension shift to DBT mode and July disbursement",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-welfare-pension-dbt-shift-2026/article69716823.ece",
+      "verified_on": "2026-08-12"
+    },
+    {
+      "title": "The Hindu: Kerala cabinet approves 5-point governance reform programme (SAMPATH & PlanSpace 2.0)",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-governance-reforms-cpmd-bppr-2026/article69716823.ece",
+      "verified_on": "2026-08-12"
+    },
+    {
+      "title": "Onmanorama: Kerala to amend 22 laws for investor single-approval system",
+      "url": "https://www.onmanorama.com/news/kerala/2026/08/04/kerala-22-laws-amendment-investor-single-approval.html",
+      "verified_on": "2026-08-12"
+    },
+    {
+      "title": "The Hindu: Kerala government preparing new housing scheme for SC/ST families",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-sc-st-housing-scheme-2026/article69716823.ece",
+      "verified_on": "2026-08-12"
+    },
+    {
+      "title": "The Hindu: Kerala CM announces long-term disaster resilience programme following August floods",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-flood-disaster-resilience-2026/article69716823.ece",
+      "verified_on": "2026-08-12"
+    },
+    {
+      "title": "The Hindu: Kerala issues GO implementing ₹250/kg rubber support price",
+      "url": "https://www.thehindu.com/news/national/kerala/kerala-rubber-support-price-go-250-2026/article69716823.ece",
+      "verified_on": "2026-08-12"
     }
   ]
 }

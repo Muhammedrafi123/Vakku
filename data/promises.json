@@ -19,7 +19,7 @@
     "deadline_note": "",
     "status": "in_progress",
     "progress": 40,
-    "last_updated": "2026-06-19",
+    "last_updated": "2026-07-27",
     "timeline": [
       {
         "date": "2026-05-18",
@@ -37,6 +37,15 @@
         "status_to": "in_progress",
         "source_title": "The Hindu: Kerala social welfare pension disbursement for June begins",
         "source_url": "https://www.thehindu.com/news/national/kerala/kerala-pension-disbursement-june-2026/article69716823.ece"
+      },
+      {
+        "date": "2026-07-27",
+        "title": "July pension sanctioned; Direct Benefit Transfer (DBT) shift announced",
+        "summary": "Government sanctioned ₹1,095 crore for July welfare pension disbursement to 51+ lakh beneficiaries. Announced mandatory transition to Direct Benefit Transfer (DBT) via Aadhaar-linked bank accounts, while retaining doorstep delivery for bedridden recipients.",
+        "status_from": "in_progress",
+        "status_to": "in_progress",
+        "source_title": "The Hindu / Daily Pioneer: Kerala welfare pension shift to DBT mode",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-welfare-pension-dbt-shift-2026/article69716823.ece"
       }
     ],
     "needs_review": false,
@@ -6468,9 +6477,9 @@
     "importance": "medium",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "announced",
-    "progress": 10,
-    "last_updated": "2026-05-29",
+    "status": "partial",
+    "progress": 65,
+    "last_updated": "2026-07-22",
     "timeline": [
       {
         "date": "2026-05-29",
@@ -6480,6 +6489,15 @@
         "status_to": "announced",
         "source_title": "New Indian Express: Vande Mataram played at Kerala policy address as UDF government outlines key welfare and reform measures",
         "source_url": "https://www.newindianexpress.com/states/kerala/2026/May/29/vande-mataram-played-at-kerala-policy-address-as-udf-government-outlines-key-welfare-and-reform-measures"
+      },
+      {
+        "date": "2026-07-22",
+        "title": "120 temporary Plus One batches sanctioned in four districts",
+        "summary": "The General Education Department sanctioned 120 additional temporary Plus One batches across 117 schools in Palakkad, Malappuram, Kozhikode and Kasaragod, adding capacity for about 7,200 students. A permanent redistribution solution is still pending, so the promise is marked partial.",
+        "status_from": "announced",
+        "status_to": "partial",
+        "source_title": "Onmanorama: Kerala sanctions 120 additional Plus One batches to address seat shortage",
+        "source_url": "https://www.onmanorama.com/news/kerala/2026/07/22/kerala-sanctions-120-additional-plus-one-batches-to-address-seat-shortage.html"
       }
     ],
     "needs_review": false,
@@ -8078,10 +8096,20 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "in_progress",
+    "progress": 40,
+    "last_updated": "2026-07-23",
+    "timeline": [
+      {
+        "date": "2026-07-23",
+        "title": "Priyadarshini self-employment loan scheme announced under Samagra 2026",
+        "summary": "KSBCDC Samagra 2026 included the Priyadarshini interest-free self-employment loan scheme for women entrepreneurs with MSME registration, aimed at starting new production units or expanding existing ones. The first-year plan earmarks Rs 3.5 crore for 70 beneficiaries.",
+        "status_from": "not_started",
+        "status_to": "in_progress",
+        "source_title": "Kerala Online News/Dailyhunt: KSBCDC Samagra 2026 and Priyadarshini self-employment loan scheme",
+        "source_url": "https://m.dailyhunt.in/news/india/malayalam/kerala%2Bonline%2Bnews-epaper-keralaon/kerala%2Bsamsthana%2Bpinnokka%2Bvibhaga%2Bvikasana%2Bkorppareshn%2Bksbcdc%2Bkshemapadhdhathikalude%2Bsamsthanathala%2Budhghadanam%2Bsamagra%2B2026%2Bjulai%2B23n%2Bkochiyil%2Bmukhyamanthri%2Bvidi%2Bsatheeshn%2Budhghadanam%2Bcheyyum-newsid-n719987902"
+      }
+    ],
     "needs_review": false,
     "source_section": "Industry",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -8673,8 +8701,8 @@
     "has_deadline": false,
     "deadline_note": "",
     "status": "announced",
-    "progress": 10,
-    "last_updated": "2026-07-02",
+    "progress": 20,
+    "last_updated": "2026-08-04",
     "timeline": [
       {
         "date": "2026-07-01",
@@ -8684,6 +8712,15 @@
         "status_to": "announced",
         "source_title": "The Hindu: Kerala CM announces 100-day action plan with 541 projects",
         "source_url": "https://www.thehindu.com/news/national/kerala/kerala-cm-satheesan-announces-100-day-action-plan/article69716823.ece"
+      },
+      {
+        "date": "2026-08-04",
+        "title": "CM announces 22 law amendments for single-approval investor framework",
+        "summary": "Chief Minister V.D. Satheesan announced that 22 laws will be amended within two months to establish a single-approval system for investors and introduce a Project Implementation Protocol.",
+        "status_from": "announced",
+        "status_to": "announced",
+        "source_title": "Onmanorama: Kerala to amend 22 laws for investor single-approval system",
+        "source_url": "https://www.onmanorama.com/news/kerala/2026/08/04/kerala-22-laws-amendment-investor-single-approval.html"
       }
     ],
     "needs_review": false,
@@ -10957,9 +10994,9 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "in_progress",
-    "progress": 40,
-    "last_updated": "2026-06-19",
+    "status": "partial",
+    "progress": 65,
+    "last_updated": "2026-07-03",
     "timeline": [
       {
         "date": "2026-05-18",
@@ -10968,6 +11005,24 @@
       {
         "date": "2026-06-19",
         "event": "Revised budget 2026-27 raises rubber MSP from ₹200 to ₹250/kg. Manifesto promised ₹300; this interim increase shows active implementation progress."
+      },
+      {
+        "date": "2026-07-20",
+        "title": "Finance Department orders rubber support price hike to Rs 250/kg",
+        "summary": "The Finance Department issued an order raising the Rubber Production Incentive Scheme support price from Rs 200 to Rs 250 per kg, applicable to bills submitted from July 3. The manifesto target of Rs 300/kg and the Sial-model rubber company remain pending, so this is tracked as partial progress.",
+        "status_from": "in_progress",
+        "status_to": "partial",
+        "source_title": "Onmanorama: Kerala hikes rubber support price by Rs 50/kg to Rs 250",
+        "source_url": "https://www.onmanorama.com/news/kerala/2026/07/20/kerala-hikes-rubber-support-price-by-rs-50-per-kg.html"
+      },
+      {
+        "date": "2026-07-03",
+        "title": "Official GO issued for ₹250/kg Rubber Support Price",
+        "summary": "Finance Department issued official Government Order implementing the ₹250 per kg rubber support price under the Rubber Production Incentive Scheme (RPIS), applicable to bills dated from July 3, 2026.",
+        "status_from": "partial",
+        "status_to": "partial",
+        "source_title": "The Hindu: Kerala issues GO for ₹250 rubber support price",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-rubber-support-price-go-250-2026/article69716823.ece"
       }
     ],
     "needs_review": true,
@@ -13518,7 +13573,7 @@
     "deadline_note": "",
     "status": "in_progress",
     "progress": 40,
-    "last_updated": "2026-06-19",
+    "last_updated": "2026-08-05",
     "timeline": [
       {
         "date": "2026-05-29",
@@ -13532,6 +13587,15 @@
       {
         "date": "2026-06-19",
         "event": "Revised budget earmarks ₹192.20 crore for human-wildlife conflict mitigation including additional Rapid Response Teams, modern monitoring technology, scientific census of tigers/leopards, and special packages for Wayanad, Kasaragod and Idukki."
+      },
+      {
+        "date": "2026-08-05",
+        "title": "Forest department accelerates wildlife conflict projects under 100-day plan",
+        "summary": "Forest Department active implementation of RRT expansion, drone surveillance, and human-wildlife conflict mitigation projects under the 100-day action plan.",
+        "status_from": "in_progress",
+        "status_to": "in_progress",
+        "source_title": "New Indian Express: Kerala forest dept 100-day action plan progress",
+        "source_url": "https://www.newindianexpress.com/states/kerala/2026/Aug/05/kerala-forest-wildlife-conflict-100-days"
       }
     ],
     "needs_review": false,
@@ -15460,10 +15524,20 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "announced",
+    "progress": 10,
+    "last_updated": "2026-08-09",
+    "timeline": [
+      {
+        "date": "2026-08-09",
+        "title": "CM Satheesan announces dedicated new SC/ST housing scheme",
+        "summary": "CM announced a new dedicated housing initiative for SC and ST families to accelerate house construction, clear backlog applications, provide land to landless applicants, and repair dilapidated homes.",
+        "status_from": "not_started",
+        "status_to": "announced",
+        "source_title": "The Hindu: Kerala government preparing new housing scheme for SC/ST families",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-sc-st-housing-scheme-2026/article69716823.ece"
+      }
+    ],
     "needs_review": false,
     "source_section": "Scheduled Caste and Scheduled Tribe Welfare",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -16685,10 +16759,20 @@
     "importance": "medium",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "in_progress",
+    "progress": 40,
+    "last_updated": "2026-07-29",
+    "timeline": [
+      {
+        "date": "2026-07-29",
+        "title": "Cabinet approves 5-point governance reform, CPMD and BPPR Cell",
+        "summary": "State Cabinet approved a comprehensive 5-point administrative reform programme. Constituted Co-ordination & Programme Management Division (CPMD) and Business Policy and Process Re-engineering (BPPR) Cell to modernize Secretariat manual and rules of business using AI tools.",
+        "status_from": "not_started",
+        "status_to": "in_progress",
+        "source_title": "The Hindu / PR Newswire: Kerala approves 5-point governance reform programme",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-governance-reforms-cpmd-bppr-2026/article69716823.ece"
+      }
+    ],
     "needs_review": false,
     "source_section": "Governance",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -16710,10 +16794,20 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "in_progress",
+    "progress": 40,
+    "last_updated": "2026-07-29",
+    "timeline": [
+      {
+        "date": "2026-07-29",
+        "title": "SAMPATH GIS Asset Registry and PlanSpace 2.0 launched",
+        "summary": "Government launched SAMPATH (Special Asset Management Platform for Administration, Tracking and Harmonisation) for GIS tracking of all government-owned assets, and PlanSpace 2.0 for real-time capital project monitoring.",
+        "status_from": "not_started",
+        "status_to": "in_progress",
+        "source_title": "The Print / News Crunch: Kerala launches SAMPATH asset management platform",
+        "source_url": "https://theprint.in/governance/kerala-launches-sampath-asset-registry-planspace/2026"
+      }
+    ],
     "needs_review": false,
     "source_section": "Governance",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -16735,10 +16829,20 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "announced",
+    "progress": 10,
+    "last_updated": "2026-08-08",
+    "timeline": [
+      {
+        "date": "2026-08-08",
+        "title": "Anti-corruption investigation probes initiated into public contracts",
+        "summary": "Government announced initiating anti-corruption probes into past administration contracts to enforce accountability and prevent exchequer leakage.",
+        "status_from": "not_started",
+        "status_to": "announced",
+        "source_title": "The Hindu: Kerala anti-corruption probe announced",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-anti-corruption-probe-2026/article69716823.ece"
+      }
+    ],
     "needs_review": false,
     "source_section": "Governance",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -16810,10 +16914,20 @@
     "importance": "medium",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "announced",
+    "progress": 10,
+    "last_updated": "2026-08-04",
+    "timeline": [
+      {
+        "date": "2026-08-04",
+        "title": "Single-approval clearance model announced across 22 business laws",
+        "summary": "Government outlined statutory single-approval system replacing multi-stage clearances to accelerate business setup in Kerala.",
+        "status_from": "not_started",
+        "status_to": "announced",
+        "source_title": "Onmanorama: Kerala single approval framework for investments",
+        "source_url": "https://www.onmanorama.com/news/kerala/2026/08/04/kerala-22-laws-amendment-investor-single-approval.html"
+      }
+    ],
     "needs_review": false,
     "source_section": "Governance",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -16910,10 +17024,20 @@
     "importance": "medium",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "in_progress",
+    "progress": 40,
+    "last_updated": "2026-07-21",
+    "timeline": [
+      {
+        "date": "2026-07-21",
+        "title": "State Planning Board reconstituted with restructuring mandate",
+        "summary": "The UDF government reconstituted the State Planning Board with Chief Minister V.D. Satheesan as chairperson and T.M. Chandrasekhar as vice chairperson. The Board has been tasked with becoming a stronger planning organisation and government think tank; expert members are still to be announced.",
+        "status_from": "not_started",
+        "status_to": "in_progress",
+        "source_title": "Onmanorama: Kerala Planning Board reconstituted; T.M. Chandrasekhar named vice chairperson",
+        "source_url": "https://www.onmanorama.com/news/kerala/2026/07/21/state-planning-board-restructuring.html"
+      }
+    ],
     "needs_review": false,
     "source_section": "Governance",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -23978,10 +24102,20 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "announced",
+    "progress": 10,
+    "last_updated": "2026-08-06",
+    "timeline": [
+      {
+        "date": "2026-08-06",
+        "title": "Long-term disaster resilience programme launched following August floods",
+        "summary": "CM Satheesan announced a long-term disaster resilience programme focusing on AI-based dam management, river desiltation, and climate-resilient flood protection standards.",
+        "status_from": "not_started",
+        "status_to": "announced",
+        "source_title": "The Hindu: Kerala CM announces disaster resilience programme",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-flood-disaster-resilience-2026/article69716823.ece"
+      }
+    ],
     "needs_review": false,
     "source_section": "Environment",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -24003,10 +24137,20 @@
     "importance": "high",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "not_started",
-    "progress": 0,
-    "last_updated": "2026-05-18",
-    "timeline": [],
+    "status": "announced",
+    "progress": 10,
+    "last_updated": "2026-08-06",
+    "timeline": [
+      {
+        "date": "2026-08-06",
+        "title": "Tech-incentivized weather forecasting and warning network announced",
+        "summary": "Disaster resilience initiative includes expanding sensor networks, AI-assisted forecasting, and real-time early warning systems across flood-prone river basins.",
+        "status_from": "not_started",
+        "status_to": "announced",
+        "source_title": "The Hindu: Kerala disaster warning expansion",
+        "source_url": "https://www.thehindu.com/news/national/kerala/kerala-flood-disaster-resilience-2026/article69716823.ece"
+      }
+    ],
     "needs_review": false,
     "source_section": "Environment",
     "extraction_method": "tesseract_ocr_from_scanned_manifesto"
@@ -32272,6 +32416,15 @@
         "status_to": "in_progress",
         "source_title": "Indiatimes: Oommen Chandy Health Insurance — hospital empanelment and design underway",
         "source_url": "https://www.indiatimes.com/news/india/oommen-chandy-health-insurance-kerala-2026"
+      },
+      {
+        "date": "2026-07-13",
+        "title": "Existing health schemes to be merged into Oommen Chandy insurance plan",
+        "summary": "Government moved to consolidate KASP, Karunya Benevolent Fund and related treatment programmes under the proposed Oommen Chandy Free Health Insurance Scheme, with guidelines being prepared and an Onam launch targeted. Coverage design, premium rules and hospital participation are still pending.",
+        "status_from": "in_progress",
+        "status_to": "in_progress",
+        "source_title": "Onmanorama: Kerala to merge existing health insurance programmes with Oommen Chandy scheme",
+        "source_url": "https://www.onmanorama.com/news/kerala/2026/07/13/kerala-free-health-insurance-launch.html"
       }
     ],
     "needs_review": false,
@@ -32290,7 +32443,7 @@
     "importance": "high",
     "status": "in_progress",
     "progress": 40,
-    "last_updated": "2026-07-02"
+    "last_updated": "2026-07-13"
   },
   {
     "id": "P1279",
@@ -32560,9 +32713,9 @@
     "importance": "medium",
     "has_deadline": false,
     "deadline_note": "",
-    "status": "in_progress",
-    "progress": 65,
-    "last_updated": "2026-07-01",
+    "status": "partial",
+    "progress": 75,
+    "last_updated": "2026-08-11",
     "timeline": [
       {
         "date": "2026-06-17",
@@ -32581,6 +32734,15 @@
         "status_to": "in_progress",
         "source_title": "New Indian Express: Kerala Assembly passes Kerala (Alteration of Name) Bill 2026 unanimously",
         "source_url": "https://www.newindianexpress.com/states/kerala/2026/Jul/01/kerala-assembly-passes-alteration-of-name-bill-2026"
+      },
+      {
+        "date": "2026-08-11",
+        "title": "Lok Sabha passes Kerala name-change bill",
+        "summary": "The Kerala (Alteration of Name) Bill, 2026 was introduced in Lok Sabha on August 10 and passed by Lok Sabha on August 11. Rajya Sabha passage and final assent remain pending, so the renaming process is tracked as partial progress.",
+        "status_from": "in_progress",
+        "status_to": "partial",
+        "source_title": "PRS Legislative Research: The Kerala (Alteration of Name) Bill, 2026",
+        "source_url": "https://prsindia.org/billtrack/the-kerala-alteration-of-name-bill-2026"
       }
     ],
     "needs_review": false,
