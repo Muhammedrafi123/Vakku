@@ -7867,293 +7867,190 @@ input {
 }
 
 /* ═════════════════════════════════════════════════════════════════
-   HIGH-TRUST CENTERED SUPPORT MODAL (30s TRIGGER)
+   STRIPE-LEVEL MINIMAL SUPPORT MODAL (30s TRIGGER)
    ═════════════════════════════════════════════════════════════════ */
-.chai-overlay-backdrop {
+.sp-backdrop {
   position: fixed;
   inset: 0;
   z-index: 99999;
-  background: rgba(8, 9, 11, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  background: rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  animation: chaiBackdropFadeIn 0.35s ease forwards;
+  animation: spFadeIn 0.25s ease forwards;
 }
 
-.chai-modal-card {
+.sp-card {
   position: relative;
-  max-width: 450px;
+  max-width: 420px;
   width: 100%;
-  background: linear-gradient(180deg, rgba(26, 26, 30, 0.96) 0%, rgba(15, 15, 18, 0.98) 100%);
-  border: 1px solid rgba(245, 158, 11, 0.28);
-  border-radius: 24px;
-  padding: 28px 24px 22px 24px;
+  background: #0f1015;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  padding: 24px;
   box-shadow: 
-    0 30px 70px -15px rgba(0, 0, 0, 0.85),
-    0 0 45px rgba(245, 158, 11, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12);
-  animation: chaiModalSpringIn 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
-  overflow: hidden;
-  text-align: center;
+    0 20px 50px -10px rgba(0, 0, 0, 0.7),
+    0 0 1px rgba(255, 255, 255, 0.15);
+  animation: spScaleIn 0.25s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  text-align: left;
 }
 
-.chai-modal-card::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 3px;
-  background: linear-gradient(90deg, #f59e0b, #eab308, #f97316);
-  border-top-left-radius: 24px;
-  border-top-right-radius: 24px;
-}
-
-.chai-modal-close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
+.sp-header {
   display: flex;
   align-items: center;
-  justify-content: center;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  color: #9ca3af;
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  justify-content: space-between;
+  margin-bottom: 18px;
 }
 
-.chai-modal-close:hover {
-  background: rgba(255, 255, 255, 0.14);
-  color: #ffffff;
-  transform: rotate(90deg) scale(1.05);
-}
-
-.chai-modal-header {
+.sp-brand {
   display: flex;
-  justify-content: center;
-  margin-bottom: 16px;
-}
-
-.chai-modal-tag {
-  display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(245, 158, 11, 0.1);
-  border: 1px solid rgba(245, 158, 11, 0.28);
-  padding: 5px 14px;
-  border-radius: 100px;
-  font-size: 0.76rem;
+  gap: 8px;
+  font-size: 0.85rem;
   font-weight: 600;
-  color: #fbbf24;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  color: #f3f4f6;
 }
 
-.chai-tag-icon {
-  color: #f59e0b;
+.sp-brand-divider {
+  color: #4b5563;
+  font-weight: 400;
 }
 
-.chai-modal-hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 14px;
+.sp-brand-tag {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 400;
 }
 
-.chai-hero-icon-wrap {
-  position: relative;
-  width: 60px;
-  height: 60px;
-  border-radius: 20px;
-  background: linear-gradient(135deg, rgba(245, 158, 11, 0.2) 0%, rgba(217, 119, 6, 0.08) 100%);
-  border: 1px solid rgba(245, 158, 11, 0.3);
+.sp-close {
+  background: transparent;
+  border: none;
+  color: #6b7280;
+  cursor: pointer;
+  padding: 6px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-bottom: 14px;
-  box-shadow: 0 10px 25px -5px rgba(245, 158, 11, 0.25);
+  transition: all 0.15s ease;
 }
 
-.chai-hero-icon {
-  color: #f59e0b;
-  filter: drop-shadow(0 2px 8px rgba(245, 158, 11, 0.4));
-  animation: chaiHeroFloat 2.5s infinite ease-in-out;
+.sp-close:hover {
+  background: rgba(255, 255, 255, 0.06);
+  color: #f3f4f6;
 }
 
-.chai-hero-sparkle {
-  position: absolute;
-  top: -4px;
-  right: -4px;
-  color: #fbbf24;
-  animation: chaiSparkleGlow 2s infinite ease-in-out;
-}
-
-.chai-modal-title {
-  font-size: 1.22rem;
-  font-weight: 700;
-  color: #ffffff;
-  line-height: 1.35;
-  margin: 0;
-  letter-spacing: -0.01em;
-}
-
-.chai-modal-body {
+.sp-content {
   margin-bottom: 22px;
 }
 
-.chai-modal-text {
-  font-size: 0.88rem;
-  line-height: 1.55;
-  color: #d1d5db;
-  margin: 0 0 16px 0;
+.sp-title {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1.35;
+  margin: 0 0 8px 0;
+  letter-spacing: -0.015em;
 }
 
-.chai-trust-pills {
+.sp-desc {
+  font-size: 0.875rem;
+  line-height: 1.52;
+  color: #9ca3af;
+  margin: 0;
+}
+
+.sp-footer {
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 8px;
+  gap: 10px;
 }
 
-.chai-pill-item {
+.sp-btn-primary {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  background: rgba(255, 255, 255, 0.04);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  padding: 4px 10px;
-  border-radius: 100px;
-  font-size: 0.74rem;
-  font-weight: 500;
-  color: #9ca3af;
-}
-
-.chai-pill-dot {
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-}
-.chai-pill-dot.green { background: #22c55e; box-shadow: 0 0 6px rgba(34, 197, 94, 0.5); }
-.chai-pill-dot.amber { background: #f59e0b; box-shadow: 0 0 6px rgba(245, 158, 11, 0.5); }
-.chai-pill-dot.blue { background: #3b82f6; box-shadow: 0 0 6px rgba(59, 130, 246, 0.5); }
-
-.chai-modal-actions {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  margin-bottom: 16px;
-}
-
-.chai-modal-primary-btn {
-  display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 9px;
-  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
-  color: #0b0c0e;
-  font-weight: 700;
-  font-size: 0.95rem;
-  padding: 13px 22px;
-  border-radius: 14px;
+  gap: 8px;
+  background: #ffffff;
+  color: #0a0a0c;
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding: 10px 18px;
+  border-radius: 10px;
   text-decoration: none;
-  box-shadow: 
-    0 6px 20px -2px rgba(245, 158, 11, 0.45),
-    inset 0 1px 0 rgba(255, 255, 255, 0.35);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.15s ease;
+  flex: 1;
 }
 
-.chai-modal-primary-btn:hover {
-  transform: translateY(-2px) scale(1.01);
-  box-shadow: 
-    0 10px 28px -2px rgba(245, 158, 11, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.45);
-  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+.sp-btn-primary:hover {
+  background: #f3f4f6;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.15);
 }
 
-.chai-btn-arrow {
-  transition: transform 0.2s ease;
-}
-.chai-modal-primary-btn:hover .chai-btn-arrow {
-  transform: translateX(2px) translateY(-2px);
+.sp-ext-icon {
+  opacity: 0.65;
+  transition: opacity 0.15s ease;
 }
 
-.chai-modal-secondary-btn {
+.sp-btn-primary:hover .sp-ext-icon {
+  opacity: 1;
+}
+
+.sp-btn-secondary {
   background: transparent;
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.09);
   color: #9ca3af;
-  font-size: 0.82rem;
+  font-size: 0.875rem;
   font-weight: 500;
-  padding: 9px 16px;
-  border-radius: 12px;
+  padding: 10px 16px;
+  border-radius: 10px;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.15s ease;
 }
 
-.chai-modal-secondary-btn:hover {
-  background: rgba(255, 255, 255, 0.06);
-  color: #e5e7eb;
+.sp-btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.05);
+  color: #f3f4f6;
 }
 
-.chai-modal-footer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 5px;
-  font-size: 0.73rem;
-  color: #6b7280;
-}
-
-.chai-footer-heart {
-  color: #ef4444;
-}
-
-@keyframes chaiBackdropFadeIn {
+@keyframes spFadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
-@keyframes chaiModalSpringIn {
+@keyframes spScaleIn {
   from {
     opacity: 0;
-    transform: scale(0.92) translateY(20px);
+    transform: scale(0.96);
   }
   to {
     opacity: 1;
-    transform: scale(1) translateY(0);
+    transform: scale(1);
   }
-}
-
-@keyframes chaiHeroFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-3px); }
-}
-
-@keyframes chaiSparkleGlow {
-  0%, 100% { transform: scale(1) rotate(0deg); opacity: 0.8; }
-  50% { transform: scale(1.25) rotate(15deg); opacity: 1; }
 }
 
 @media (max-width: 480px) {
-  .chai-modal-card {
-    padding: 24px 18px 18px 18px;
-    border-radius: 20px;
+  .sp-card {
+    padding: 20px;
+    border-radius: 14px;
   }
-  
-  .chai-modal-title {
-    font-size: 1.12rem;
+  .sp-title {
+    font-size: 1.05rem;
   }
-
-  .chai-modal-text {
+  .sp-desc {
     font-size: 0.84rem;
   }
+  .sp-footer {
+    flex-direction: column;
+  }
+  .sp-btn-primary, .sp-btn-secondary {
+    width: 100%;
+  }
 }
+
 
 

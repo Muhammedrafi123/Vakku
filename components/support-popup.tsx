@@ -1,7 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { Coffee, ExternalLink, ShieldCheck, Heart, X, Sparkles } from "lucide-react";
+import { Coffee, ExternalLink, X } from "lucide-react";
+import { BrandMark } from "@/components/brand-mark";
 import { T } from "@/components/t";
 
 const CHAI_URL = "https://buymeachai.in/vellmont";
@@ -15,7 +16,6 @@ export function SupportPopup() {
       setIsVisible(true);
     }, POPUP_DELAY_MS);
 
-    // Escape key handling
     const handleKeyDown = (e: KeyboardEvent) => {
       if (e.key === "Escape") setIsVisible(false);
     };
@@ -36,89 +36,57 @@ export function SupportPopup() {
 
   return (
     <div
-      className="chai-overlay-backdrop"
+      className="sp-backdrop"
       onClick={handleClose}
       role="dialog"
       aria-modal="true"
-      aria-labelledby="chai-modal-title"
+      aria-labelledby="sp-title"
     >
-      <div
-        className="chai-modal-card"
-        onClick={(e) => e.stopPropagation()} // Prevent click propagation to backdrop
-      >
-        <button
-          onClick={handleClose}
-          className="chai-modal-close"
-          aria-label="Close dialog"
-        >
-          <X size={18} />
-        </button>
-
-        <div className="chai-modal-header">
-          <div className="chai-modal-tag">
-            <ShieldCheck size={14} className="chai-tag-icon" />
-            <span><T en="Independent Civic Tech" ml="സ്വതന്ത്ര പൊതുജന സംരംഭം" /></span>
+      <div className="sp-card" onClick={(e) => e.stopPropagation()}>
+        <div className="sp-header">
+          <div className="sp-brand">
+            <BrandMark size={24} />
+            <span className="sp-brand-name">Vakku</span>
+            <span className="sp-brand-divider">/</span>
+            <span className="sp-brand-tag">
+              <T en="Civic Tech" ml="പൊതുസേവനം" />
+            </span>
           </div>
+          <button onClick={handleClose} className="sp-close" aria-label="Close modal">
+            <X size={16} />
+          </button>
         </div>
 
-        <div className="chai-modal-hero">
-          <div className="chai-hero-icon-wrap">
-            <Coffee size={28} className="chai-hero-icon" />
-            <Sparkles size={16} className="chai-hero-sparkle" />
-          </div>
-          <h2 id="chai-modal-title" className="chai-modal-title">
+        <div className="sp-content">
+          <h2 id="sp-title" className="sp-title">
             <T
-              en="Help Keep Kerala's Promise Tracker Independent"
-              ml="വാക്ക് ട്രാക്കറിനെ സ്വതന്ത്രമായി നിലനിർത്താൻ സഹായിക്കൂ"
+              en="Keep Kerala's promise tracker independent & ad-free"
+              ml="വാക്ക് പബ്ലിക് ട്രാക്കറിനെ പരസ്യരഹിതമായി നിലനിർത്താൻ സഹായിക്കൂ"
             />
           </h2>
-        </div>
-
-        <div className="chai-modal-body">
-          <p className="chai-modal-text">
+          <p className="sp-desc">
             <T
-              en="Vakku is an ad-free, community-driven civic platform tracking 1,286 Kerala UDF manifesto promises with verified public evidence. We rely on citizen support to cover hosting & research costs."
-              ml="കേരള യു.ഡി.എഫ് സർക്കാറിന്റെ 1,286 വാഗ്ദാനങ്ങൾ തെളിവുകളോടെ നിരീക്ഷിക്കുന്ന പരസ്യരഹിത സംരംഭമാണ് വാക്ക്. ഹോസ്റ്റിംഗും റീസർച്ചും തുടരാൻ നിങ്ങളുടെ സഹായം അഭ്യർത്ഥിക്കുന്നു."
+              en="Vakku tracks 1,286 Kerala manifesto promises with verified public evidence. We rely on voluntary reader contributions to keep hosting, research, and data verification running."
+              ml="കേരള സർക്കാരിന്റെ 1,286 വാഗ്ദാനങ്ങൾ തെളിവുകളോടെ നിരീക്ഷിക്കുന്ന പബ്ലിക് പ്ലാറ്റ്‌ഫോമാണ് വാക്ക്. സർവർ വെരിഫിക്കേഷൻ ചെലവുകൾക്കായി നിങ്ങളുടെ സഹായം അഭ്യർത്ഥിക്കുന്നു."
             />
           </p>
-
-          <div className="chai-trust-pills">
-            <div className="chai-pill-item">
-              <span className="chai-pill-dot green" />
-              <T en="100% Ad-Free" ml="100% പരസ്യരഹിതം" />
-            </div>
-            <div className="chai-pill-item">
-              <span className="chai-pill-dot amber" />
-              <T en="Verified Sources" ml="സ്ഥിരീകരിച്ച തെളിവുകൾ" />
-            </div>
-            <div className="chai-pill-item">
-              <span className="chai-pill-dot blue" />
-              <T en="Open Public Data" ml="സുതാര്യമായ വിവരങ്ങൾ" />
-            </div>
-          </div>
         </div>
 
-        <div className="chai-modal-actions">
+        <div className="sp-footer">
           <a
             href={CHAI_URL}
             target="_blank"
             rel="noopener noreferrer"
             onClick={handleClose}
-            className="chai-modal-primary-btn"
+            className="sp-btn-primary"
           >
-            <Coffee size={18} />
-            <span><T en="Buy us a chai ☕" ml="ഒരു ചായ വാങ്ങി നൽകാം ☕" /></span>
-            <ExternalLink size={14} className="chai-btn-arrow" />
+            <Coffee size={15} />
+            <span><T en="Buy us a chai" ml="ഒരു ചായ നൽകാം" /></span>
+            <ExternalLink size={13} className="sp-ext-icon" />
           </a>
-
-          <button onClick={handleClose} className="chai-modal-secondary-btn">
-            <T en="Continue reading" ml="വായന തുടരുക" />
+          <button onClick={handleClose} className="sp-btn-secondary">
+            <T en="Maybe later" ml="പിന്നീടാകാം" />
           </button>
-        </div>
-
-        <div className="chai-modal-footer">
-          <Heart size={12} className="chai-footer-heart" />
-          <span><T en="Made for the citizens of Kerala" ml="കേരള ജനതയ്ക്കായി നിർമ്മിച്ചത്" /></span>
         </div>
       </div>
     </div>
