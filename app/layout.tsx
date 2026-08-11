@@ -9,6 +9,7 @@ import { SeoJsonLd } from "@/components/seo-json-ld";
 import { LanguageProvider } from "@/contexts/language-context";
 import { brand } from "@/lib/brand";
 import { graph, organizationSchema, websiteSchema } from "@/lib/seo";
+import { SupportPopup } from "@/components/support-popup";
 import "./globals.css";
 
 const inter = localFont({
@@ -110,6 +111,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
           <MobileNav />
+          <SupportPopup />
         </LanguageProvider>
         <Analytics />
       </body>

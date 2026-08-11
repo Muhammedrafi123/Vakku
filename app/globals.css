@@ -7865,3 +7865,196 @@ input {
     height: 19px;
   }
 }
+
+/* ═════════════════════════════════════════════════════════════════
+   SUPPORT CHAI 30s POPUP MODAL
+   ═════════════════════════════════════════════════════════════════ */
+.chai-popup-backdrop {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  max-width: 380px;
+  width: calc(100vw - 32px);
+  animation: chaiPopupSlideUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  pointer-events: auto;
+}
+
+.chai-popup-card {
+  position: relative;
+  background: rgba(18, 18, 20, 0.92);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 20px;
+  padding: 22px 22px 20px 22px;
+  box-shadow: 
+    0 20px 40px -10px rgba(0, 0, 0, 0.7),
+    0 0 30px rgba(245, 158, 11, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  overflow: hidden;
+}
+
+.chai-popup-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #f59e0b, #d97706, #f97316);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.chai-popup-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #9ca3af;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.chai-popup-close:hover {
+  background: rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  transform: scale(1.08);
+}
+
+.chai-popup-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+  padding-right: 32px;
+}
+
+.chai-popup-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  padding: 5px 12px;
+  border-radius: 100px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #fbbf24;
+  letter-spacing: 0.02em;
+}
+
+.chai-popup-cup {
+  color: #f59e0b;
+  animation: chaiSteamPulse 2s infinite ease-in-out;
+}
+
+.chai-popup-heart {
+  color: #ef4444;
+  opacity: 0.8;
+  animation: heartPulse 1.8s infinite ease-in-out;
+}
+
+.chai-popup-body {
+  margin-bottom: 18px;
+}
+
+.chai-popup-title {
+  font-size: 1.08rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.35;
+  margin: 0 0 6px 0;
+  letter-spacing: -0.01em;
+}
+
+.chai-popup-text {
+  font-size: 0.84rem;
+  line-height: 1.48;
+  color: #d1d5db;
+  margin: 0;
+}
+
+.chai-popup-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.chai-popup-cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #000000;
+  font-weight: 700;
+  font-size: 0.9rem;
+  padding: 11px 18px;
+  border-radius: 12px;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(245, 158, 11, 0.35);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.chai-popup-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(245, 158, 11, 0.5);
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.chai-popup-dismiss {
+  background: transparent;
+  border: none;
+  color: #9ca3af;
+  font-size: 0.78rem;
+  font-weight: 500;
+  padding: 4px;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.2s ease;
+}
+
+.chai-popup-dismiss:hover {
+  color: #e5e7eb;
+}
+
+@keyframes chaiPopupSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes chaiSteamPulse {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-2px) scale(1.1); }
+}
+
+@keyframes heartPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.15); }
+}
+
+@media (max-width: 640px) {
+  .chai-popup-backdrop {
+    bottom: max(76px, calc(68px + env(safe-area-inset-bottom, 0px)));
+    right: 16px;
+    left: 16px;
+    width: auto;
+    max-width: none;
+  }
+}
+
