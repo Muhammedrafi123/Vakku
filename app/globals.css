@@ -7867,115 +7867,234 @@ input {
 }
 
 /* ═════════════════════════════════════════════════════════════════
-   SUPPORT CHAI MODAL (REFERENCE ILLUSTRATION STYLE)
+   SUPPORT CHAI MODAL (ULTRA-PREMIUM GLASS & BUTTER MOTION UX)
    ═════════════════════════════════════════════════════════════════ */
 .sp-modal-backdrop {
   position: fixed;
   inset: 0;
   z-index: 99999;
-  background: rgba(10, 15, 30, 0.65);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
+  background: rgba(6, 9, 15, 0.78);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 20px;
-  animation: spModalFadeIn 0.3s ease forwards;
+  animation: spModalFadeIn 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.sp-modal-backdrop.sp-modal-exit {
+  animation: spModalFadeOut 0.25s ease forwards;
 }
 
 .sp-modal-card {
   position: relative;
-  max-width: 410px;
+  max-width: 420px;
   width: 100%;
-  background: #ffffff;
-  border-radius: 24px;
+  background: linear-gradient(165deg, rgba(22, 27, 38, 0.96) 0%, rgba(13, 16, 23, 0.98) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 28px;
   box-shadow: 
-    0 25px 60px -10px rgba(0, 0, 0, 0.4),
-    0 0 1px rgba(0, 0, 0, 0.1);
-  animation: spModalPopIn 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    0 30px 90px -15px rgba(0, 0, 0, 0.75),
+    0 0 50px -10px rgba(245, 158, 11, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
+  animation: spModalPopIn 0.38s cubic-bezier(0.16, 1, 0.3, 1) forwards;
   overflow: hidden;
   text-align: center;
-  color: #1e293b;
+  color: #f8fafc;
+}
+
+.sp-modal-card.sp-card-exit {
+  animation: spCardPopOut 0.25s ease forwards;
+}
+
+.sp-card-ambient-glow {
+  position: absolute;
+  top: -120px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  height: 280px;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.22) 0%, rgba(217, 119, 6, 0.08) 45%, transparent 70%);
+  pointer-events: none;
+}
+
+.sp-modal-inner {
+  position: relative;
+  z-index: 2;
+  padding: 32px 28px 28px 28px;
 }
 
 .sp-modal-close {
   position: absolute;
-  top: 16px;
-  right: 16px;
+  top: 18px;
+  right: 18px;
   z-index: 10;
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: rgba(255, 255, 255, 0.15);
-  border: none;
-  color: #ffffff;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #94a3b8;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s ease;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 .sp-modal-close:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.15);
   color: #ffffff;
-  transform: scale(1.08);
+  transform: rotate(90deg) scale(1.1);
 }
 
-.sp-modal-header-banner {
-  position: relative;
-  background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-  padding: 32px 20px 24px 20px;
-  display: flex;
-  justify-content: center;
+/* Pill badge */
+.sp-pill-badge {
+  display: inline-flex;
   align-items: center;
-  border-bottom: 3px solid #f59e0b;
+  gap: 7px;
+  padding: 5px 14px;
+  border-radius: 100px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.28);
+  color: #fbbf24;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 18px;
+  text-transform: uppercase;
 }
 
-.sp-modal-illustration-wrap {
-  width: 88px;
-  height: 88px;
+.sp-pulse-dot {
+  width: 6px;
+  height: 6px;
   border-radius: 50%;
-  background: #ffffff;
-  padding: 8px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  background: #f59e0b;
+  box-shadow: 0 0 8px #f59e0b;
+  animation: spPulse 2s infinite;
+}
+
+.sp-pill-icon {
+  color: #f59e0b;
+}
+
+/* Illustration Container */
+.sp-illustration-container {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 16px auto;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: spFloat 3s infinite ease-in-out;
 }
 
-.sp-modal-illustration {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
+.sp-chai-halo {
+  position: absolute;
+  inset: -12px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(245, 158, 11, 0.3) 0%, transparent 70%);
+  filter: blur(12px);
+  animation: spGlowPulse 3s ease-in-out infinite alternate;
 }
 
-.sp-modal-body {
-  padding: 24px 28px 28px 28px;
+.sp-chai-svg {
+  width: 92px;
+  height: 92px;
+  filter: drop-shadow(0 12px 24px rgba(0, 0, 0, 0.45));
+  position: relative;
+  z-index: 2;
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sp-modal-card:hover .sp-chai-svg {
+  transform: translateY(-3px) scale(1.04);
+}
+
+/* Steam keyframe animation */
+.sp-steam-path {
+  transform-origin: center bottom;
+}
+
+.steam-1 {
+  animation: spSteam 2.8s ease-in-out infinite;
+}
+
+.steam-2 {
+  animation: spSteam 3.2s ease-in-out 0.4s infinite;
+}
+
+.steam-3 {
+  animation: spSteam 2.9s ease-in-out 0.8s infinite;
 }
 
 .sp-modal-title {
-  font-size: 1.45rem;
+  font-size: 1.55rem;
   font-weight: 800;
-  color: #0f172a;
+  color: #ffffff;
   margin: 0 0 6px 0;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
+  background: linear-gradient(180deg, #ffffff 0%, #cbd5e1 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .sp-modal-subtitle {
-  font-size: 0.95rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #94a3b8;
+  line-height: 1.45;
+  margin: 0 0 20px 0;
+}
+
+/* Impact stats grid */
+.sp-impact-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.sp-impact-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 14px;
+  padding: 10px 4px;
+  text-align: center;
+  transition: all 0.25s ease;
+}
+
+.sp-impact-card:hover {
+  background: rgba(245, 158, 11, 0.08);
+  border-color: rgba(245, 158, 11, 0.25);
+  transform: translateY(-2px);
+}
+
+.sp-impact-val {
+  display: block;
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: #f59e0b;
+  font-family: var(--font-mono), monospace;
+  line-height: 1.1;
+}
+
+.sp-impact-lbl {
+  display: block;
+  font-size: 0.66rem;
   font-weight: 700;
-  color: #ea580c;
-  line-height: 1.4;
-  margin: 0 0 12px 0;
+  color: #94a3b8;
+  margin-top: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
 }
 
 .sp-modal-note {
-  font-size: 0.85rem;
-  line-height: 1.55;
+  font-size: 0.82rem;
+  line-height: 1.6;
   color: #64748b;
-  margin: 0 0 24px 0;
+  margin: 0 0 22px 0;
 }
 
 .sp-modal-cta-wrap {
@@ -7986,52 +8105,105 @@ input {
 }
 
 .sp-modal-submit-btn {
+  position: relative;
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
+  gap: 10px;
   width: 100%;
-  background: linear-gradient(135deg, #f97316 0%, #ea580c 100%);
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 0.98rem;
-  padding: 13px 24px;
+  background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+  color: #0d1117;
+  font-weight: 800;
+  font-size: 0.96rem;
+  padding: 14px 24px;
   border-radius: 100px;
   text-decoration: none;
-  box-shadow: 0 6px 20px rgba(234, 88, 12, 0.35);
-  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 
+    0 8px 25px -4px rgba(245, 158, 11, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.sp-modal-submit-btn::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -60%;
+  width: 40%;
+  height: 200%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.35) 50%,
+    transparent 100%
+  );
+  transform: rotate(25deg);
+  transition: left 0.6s ease;
 }
 
 .sp-modal-submit-btn:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(234, 88, 12, 0.5);
-  background: linear-gradient(135deg, #fb923c 0%, #f97316 100%);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: 
+    0 12px 30px -4px rgba(245, 158, 11, 0.6),
+    inset 0 1px 0 rgba(255, 255, 255, 0.6);
+  background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 100%);
+}
+
+.sp-modal-submit-btn:hover::after {
+  left: 140%;
+}
+
+.sp-modal-submit-btn:active {
+  transform: translateY(0) scale(0.99);
+}
+
+.sp-btn-icon {
+  color: #0d1117;
+}
+
+.sp-btn-arrow {
+  opacity: 0.7;
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.sp-modal-submit-btn:hover .sp-btn-arrow {
+  transform: translateX(3px) translateY(-1px);
+  opacity: 1;
 }
 
 .sp-modal-dismiss-btn {
   background: transparent;
   border: none;
-  color: #94a3b8;
+  color: #64748b;
   font-size: 0.82rem;
   font-weight: 600;
-  padding: 6px 12px;
+  padding: 8px 16px;
   cursor: pointer;
-  transition: color 0.2s ease;
+  transition: all 0.2s ease;
+  border-radius: 100px;
 }
 
 .sp-modal-dismiss-btn:hover {
-  color: #475569;
+  color: #cbd5e1;
+  background: rgba(255, 255, 255, 0.04);
 }
 
+/* Animations */
 @keyframes spModalFadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
 }
 
+@keyframes spModalFadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
 @keyframes spModalPopIn {
   from {
     opacity: 0;
-    transform: scale(0.9) translateY(15px);
+    transform: scale(0.92) translateY(20px);
   }
   to {
     opacity: 1;
@@ -8039,25 +8211,61 @@ input {
   }
 }
 
-@keyframes spFloat {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-4px); }
+@keyframes spCardPopOut {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.94) translateY(10px);
+  }
+}
+
+@keyframes spPulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(1.3); }
+}
+
+@keyframes spGlowPulse {
+  0% { opacity: 0.4; transform: scale(0.95); }
+  100% { opacity: 0.8; transform: scale(1.1); }
+}
+
+@keyframes spSteam {
+  0% {
+    stroke-dashoffset: 0;
+    opacity: 0.2;
+    transform: translateY(0) scaleX(1);
+  }
+  50% {
+    opacity: 0.85;
+    transform: translateY(-8px) scaleX(1.15);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-18px) scaleX(0.85);
+  }
 }
 
 @media (max-width: 480px) {
   .sp-modal-card {
-    border-radius: 20px;
+    border-radius: 24px;
   }
-  .sp-modal-body {
-    padding: 20px;
+  .sp-modal-inner {
+    padding: 24px 20px 22px 20px;
   }
   .sp-modal-title {
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
   .sp-modal-subtitle {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+  }
+  .sp-impact-val {
+    font-size: 1rem;
   }
 }
+
 
 
 
